@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Funnel+Display:wght@300..800&display=swap');
+
+@layer base {
+    body {
+        background-color: black;
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+}
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(102, 101, 102, 0.8)
+        hsla(242, 74%, 65%, 0.5)
+    )!important;
+}
+.contact {
+    position: absolute;
+    top: 4.5rem;
+    right: 4rem;
+    width: 80px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid #bef264;
+}
